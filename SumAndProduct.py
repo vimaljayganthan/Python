@@ -1,0 +1,10 @@
+a=int(input())
+temp=a
+sum=0
+product=1
+while(temp!=0):
+  digit=temp%10
+  sum+=digit
+  product*=digit
+  temp=temp//10
+print(sum+product)
