@@ -1,6 +1,6 @@
-A={1,2}
-B={2,3}
-U={1,2,3,4,5,6,7,8,9}
+A=frozenset({1,2})
+B=frozenset({2,3})
+U=frozenset({1,2,3,4,5,6,7,8,9})
 
 V=U-(A|B)
 
@@ -10,5 +10,5 @@ Y=W&X
 print("De-Morgan's Law is Satisfied") if V==Y else print("De-Morgan's Law is not Satisfied")
 
 T=U-(A&B)
-C=U|X
+C=W|X
 print("De-Morgan's Law is Satisfied") if T==C else print("De-Morgan's Law is not Satisfied")
